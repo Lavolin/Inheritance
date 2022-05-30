@@ -6,6 +6,11 @@ namespace Inheritance
 {
     class SoftwareEngineer : Employee
     {
+        public SoftwareEngineer(int salary, int experience)
+            :base(salary, experience)
+        {
+
+        }
         public Laptop Laptop { get; set; }
 
         public void Program ()

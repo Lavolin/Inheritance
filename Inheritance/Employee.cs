@@ -6,6 +6,12 @@ namespace Inheritance
 {
     public class Employee
     {
+        public Employee(decimal salary, int experience)
+        {
+            Salary = salary;
+            Experience = experience;
+        }
+
         public decimal Salary { get; set; }
 
         public int WorkHours { get; set; }

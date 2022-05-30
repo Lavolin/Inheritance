@@ -7,25 +7,28 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
+            Employee employee = new Employee(5, 6);
+            SoftwareEngineer softwareEngineer = new SoftwareEngineer(5, 5);
+
             List<Employee> list = new List<Employee>()
             {
-                new SoftwareEngineer(),
+                new SoftwareEngineer(3, 5),
                 new Intern(),
-                new Employee()
+                new Employee(5, 6)
             };
 
             Intern intern = new Intern();
             intern.GetHelp();
 
-            Employee employee = new Employee();
-            employee = new SoftwareEngineer();
+           // Employee employee = new Employee(5, 6);
+            employee = new SoftwareEngineer(3, 3);
             //(SoftwareEngineer)employee
 
-            Employee softwareEngineer = new SoftwareEngineer();
+            //Employee softwareEngineer = new SoftwareEngineer(3,3);
             //softwareEngineer.
 
-            FireEmployee(new Employee());
-            FireEmployee(new SoftwareEngineer());
+            FireEmployee(new Employee(5, 6));
+            FireEmployee(new SoftwareEngineer(3, 3));
             FireEmployee(new Intern());
 
         }
