@@ -1,4 +1,6 @@
-﻿namespace Person
+﻿using System;
+
+namespace Person
 {
     public class StartUp
     {
@@ -20,29 +22,5 @@
             }
 
         }
-    }
-}
-
-namespace Person
-{
-    public class Person
-    {
-        // 1. Add Fields
-
-        // 2. Add Constructor
-
-        // 3. Add Properties
-
-        // 4. Add Methods
-
-    }
-}
-
-namespace Child : Person
-{
-    public class Child
-    {
-       
-
     }
 }
