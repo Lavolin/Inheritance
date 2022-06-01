@@ -4,7 +4,9 @@
     {
         public static void Main(string[] args)
         {
-            
+            Car car = new Car(100, 100);
+            car.Drive(9);
+            System.Console.WriteLine(car.Fuel);
         }
     }
 }
